@@ -247,6 +247,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &929949223 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 28de8cd8a6b1f454885cb901c876bb45, type: 3}
+  m_PrefabInstance: {fileID: 1820700788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094197652}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
@@ -514,6 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2241800262728e54c8c49ca07023c27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartObject: {fileID: 929949223}
+  isRotate: 0
 --- !u!114 &1094197660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,10 +555,34 @@ MonoBehaviour:
       m_Calls: []
   OnPointerClicked:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1094197659}
+        m_TargetAssemblyTypeName: PointerManager, Assembly-CSharp
+        m_MethodName: ShowMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\uD074\uB9AD"
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerDragged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1094197659}
+        m_TargetAssemblyTypeName: PointerManager, Assembly-CSharp
+        m_MethodName: ShowMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\uB4DC\uB798\uADF8"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1742607470
 GameObject:
   m_ObjectHideFlags: 0
