@@ -16,4 +16,11 @@ public class PointerManager : MonoBehaviour
             isRotate = !isRotate;
         }
     }
+
+    void Update()
+    {
+        if (isRotate == false) return;
+
+        heartObject.Rotate(Vector3.up * Time.deltaTime * 100.0f);
+    }
 }
